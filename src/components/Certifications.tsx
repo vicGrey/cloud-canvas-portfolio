@@ -10,8 +10,8 @@ const Certifications = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+          className="text-center mb-16">
+
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="text-gradient">Certifications</span>
           </h2>
@@ -25,13 +25,13 @@ const Certifications = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-2xl mx-auto"
-        >
+          className="max-w-2xl mx-auto">
+
           <motion.div
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
-            className="relative bg-gradient-card rounded-2xl border border-border/50 p-8 glow-card hover:border-primary/50 transition-colors group"
-          >
+            className="relative bg-gradient-card rounded-2xl border border-border/50 p-8 glow-card hover:border-primary/50 transition-colors group">
+
             {/* Glow effect on hover */}
             <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
             
@@ -52,11 +52,11 @@ const Certifications = () => {
                   Foundational certification demonstrating cloud fluency and core AWS knowledge.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center sm:justify-start text-sm text-muted-foreground">
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center gap-2">Issued: 9th October, 2026
                     <span className="w-2 h-2 rounded-full bg-primary" />
                     Issued: Month Year
                   </span>
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center gap-2">Valid through: February, 2029
                     <span className="w-2 h-2 rounded-full bg-primary" />
                     Valid through: Month Year
                   </span>
@@ -67,8 +67,8 @@ const Certifications = () => {
               <a
                 href="#"
                 className="shrink-0 p-3 rounded-lg bg-secondary/50 hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all"
-                aria-label="View Credential"
-              >
+                aria-label="View Credential">
+
                 <ExternalLink className="w-5 h-5" />
               </a>
             </div>
@@ -80,14 +80,14 @@ const Certifications = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="text-center text-muted-foreground mt-8 text-sm"
-          >
+            className="text-center text-muted-foreground mt-8 text-sm">
+
             More certifications coming soon...
           </motion.p>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Certifications;
